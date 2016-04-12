@@ -22,7 +22,7 @@ public class Cache {
         }
         this.cache = new HashMap<String, CacheEntry>(cacheSize);
         this.frequencyList = new LinkedHashSet[cacheSize];
-        this.lowFrequency = 0;
+        this.lowFrequency = Constants.DEFAULT_LOW_FREQUENCY;
         this.maxFrequency = cacheSize - 1;
         this.cacheSize = cacheSize;
         this.eviction = eviction;
